@@ -9,6 +9,9 @@ function App() {
         <p>
           Deploying this app using CI/CD on digital ocean
         </p>
+        <p>
+          Reactjs App
+        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
