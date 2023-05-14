@@ -18,11 +18,11 @@ jobs:
         with:
           node-version: 14
 
-      - name: Install dependencies
-        run: npm install
+      # - name: Install dependencies
+      #   run: npm install
 
-      - name: Build React app
-        run: npm run build
+      # - name: Build React app
+      #   run: npm run build
 
       - name: Deploy to DigitalOcean
         uses: appleboy/ssh-action@master
@@ -32,9 +32,9 @@ jobs:
           password: ${{ secrets.DROPLET_PASSWORD }}
           port: ${{ secrets.DROPLET_SSH_PORT }}
           script: |
-            cd /var/www/html
+            cd /home/react-app
             git pull origin main
-            cp -r /path/to/react-app/build/* .
+            npm run build
 
       - name: Restart Nginx
         uses: appleboy/ssh-action@master
