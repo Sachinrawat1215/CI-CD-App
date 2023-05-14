@@ -34,6 +34,8 @@ jobs:
           script: |
             cd /home/CI-CD-App
             git pull origin main
+            npm install
+            rm -rf build
             npm run build
 
       - name: Restart Nginx
