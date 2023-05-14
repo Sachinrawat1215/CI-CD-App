@@ -32,7 +32,7 @@ jobs:
           password: ${{ secrets.DROPLET_PASSWORD }}
           port: ${{ secrets.DROPLET_SSH_PORT }}
           script: |
-            cd /home/react-app
+            cd /home/CI-CD-App
             git pull origin main
             npm run build
 
