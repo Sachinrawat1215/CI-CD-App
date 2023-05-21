@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Deploying this app using CI/CD on digital ocean
+          Deploying this app with CI/CD on digital ocean
         </p>
         <p>
           Reactjs App
