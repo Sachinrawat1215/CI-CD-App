@@ -20,6 +20,7 @@ function App() {
         >
           Hello world
         </a>
+        <h6>Random Name</h6>
       </header>
     </div>
   );
